@@ -1,4 +1,4 @@
-          <div class="news">
+          <!-- <div class="news">
             {% if site.news != blank -%}
             {%- assign news_size = site.news | size -%}
             <div class="table-responsive" {% if include.limit and site.announcements.scrollable and news_size > 3 %}style="max-height: 60vw"{% endif %}>
@@ -26,4 +26,27 @@
           {%- else -%}
             <p>No news so far...</p>
           {%- endif %}
+          </div> -->
+          <div class="news">
+            <h5 style="text-align: center; font-size: 150%; font-weight: 600; padding: 10px 0 10px 0;">Updates</h5>
+            <div class="table-responsive">
+              <table class="table table-sm table-borderless">
+
+                <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
+                  [04/2024]
+                  New work <a href="https://yuchen-zhu-zyc.github.io/assets/pdf/quantum.pdf" target="_blank">Quantum state generation with Structure Preserving Diffusion Model</a> is online!
+                </td></tr>
+                <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
+                  [01/2024]
+                  I switched theme of my personal website
+                </td></tr>
+
+                <!-- <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
+                  [01/2024]
+                  <a href="https://arxiv.org/abs/2310.02233" target="_blank">Generalized Schrödinger Bridge Matching</a>
+                  (with FAIR, Meta AI) accepted to ICLR.
+                </td></tr> -->
+
+              </table>
+            </div>
           </div>
