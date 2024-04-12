@@ -292,6 +292,12 @@ scholar:
   details_layout: bibtex.html
   details_link: Details
 
+  queries:
+    preprint:
+      keyword: preprint
+    papers:
+      keyword: papers
+
   query: "@*"
   group_by: year
   group_order: descending
