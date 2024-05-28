@@ -705,13 +705,6 @@ footer.sticky-bottom {
             text-decoration: none;
           }
         }
-
-        .author-name {
-        border-bottom: none;
-        color: inherit;
-        sup {
-            color: inherit; /* Ensure the color is inherited by <sup> elements */
-        }
     }
 
         >em {
@@ -719,10 +712,6 @@ footer.sticky-bottom {
           font-style: normal;
           color: #e74c3c;
           font-wieght: 400;
-
-          sup {
-            color: inherit; /* Ensure the color is inherited by <sup> elements */
-        }
         }
 
         >span.more-authors {
@@ -734,10 +723,6 @@ footer.sticky-bottom {
             color: var(--global-text-color);
             border-bottom: 1px dashed var(--global-text-color);
           }
-
-          sup {
-            color: inherit; /* Ensure the color is inherited by <sup> elements */
-        }
         }
       }
 
