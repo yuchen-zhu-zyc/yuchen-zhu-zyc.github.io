@@ -9,5 +9,6 @@
   <div style="padding: 0 0 30px 0; text-align: center; font-size: 90%; color: #7c7c7c;">
     (* Equal contribution, <sup>‡</sup> Alphabetical order)
   </div>
-  {% bibliography -f papers -q @*[selected=true]* %}
+  {% bibliography -f {{ site.scholar.bibliography }} --group_by none --query @*[selected=true]* %}
+<!--   {% bibliography -f papers -q @*[selected=true]* %} -->
 </div>
