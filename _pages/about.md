@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Machine Learning PhD @ Georgia Tech 🚀
+subtitle: Machine Learning PhD @ Georgia Tech 🍀
 
 profile:
   align: right
