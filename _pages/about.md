@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi, I am Yuchen Zhu, a first year Machine Learning PhD at Georgia Tech.
+Hi, I am Yuchen Zhu, a 2nd year Machine Learning PhD at Georgia Tech.
 
 I work on **diffusion models, mean field games, sampling and optimal transport.** I am primarily interested in the intersection of dynamics, deep learning and statistics, with application in generative modeling, game theory, scientific machine learning and reinforcement learning. 
 
