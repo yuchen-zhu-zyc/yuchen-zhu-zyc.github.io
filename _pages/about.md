@@ -21,9 +21,9 @@ social: true  # includes social icons at the bottom of the page
 
 Hi, I am Yuchen Zhu, a 2nd year Machine Learning PhD at Georgia Tech.
 
-I work on **diffusion models, mean field games, sampling and optimal transport.** I am primarily interested in the intersection of dynamics, deep learning and statistics, with application in generative modeling, game theory, scientific machine learning and reinforcement learning. 
+My interests lie in the broad aspects of **GenAI**, wich applications in vision, language, and sciences (such as single cell genomics and quantum physics). My research currently focuses on **diffusion generative models** (especially for non-Euclidean data) and **multimodal foundation models** (such as VLMs). 
 
-At Georgia Tech, I am fortunate to be advised by [Molei Tao](https://mtao8.math.gatech.edu/) and working with a group of incredible researchers. Prior to that, I graduated with MA in Statistics from [Yale University](https://statistics.yale.edu/) and BS in Honors Mathematics with highest honor from [NYU Shanghai](https://shanghai.nyu.edu/). During these times, I had the privilege to work with [Zhuoran Yang](https://zhuoranyang.github.io/) and [Mathieu Laurière](https://mlauriere.github.io/) on reinforcement learning and mean field games. 
+At Georgia Tech, I am fortunate to be advised by [Molei Tao](https://mtao8.math.gatech.edu/) and working with a group of incredible researchers. Prior to that, I graduated with MA in Statistics from [Yale University](https://statistics.yale.edu/) and BS in Honors Mathematics with highest honor from [NYU Shanghai](https://shanghai.nyu.edu/). During those time, I had the privilege to work with [Zhuoran Yang](https://zhuoranyang.github.io/) and [Mathieu Laurière](https://mlauriere.github.io/) on reinforcement learning and mean field games. 
 
 
 **Contact:** yzhu738 [at] gatech [dot] edu
