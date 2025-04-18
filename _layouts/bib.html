@@ -113,11 +113,11 @@
         {% assign proceedings = "inproceedings,incollection" | split: ','%}
         {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
         {% if entry.type == "article" -%}
-          {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
+          {%- capture entrytype -%}{{entry.journal}}{%- endcapture -%}
         {%- elsif proceedings contains entry.type -%}
-          {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+          {%- capture entrytype -%}In {{entry.booktitle}} {%- endcapture -%}
         {%- elsif thesis contains entry.type -%}
-          {%- capture entrytype -%}<em>{{entry.school}}</em> {%- endcapture -%}
+          {%- capture entrytype -%}{{entry.school}} {%- endcapture -%}
         {%- else -%}
           {%- capture entrytype -%}{%- endcapture -%}
         {%- endif -%}
@@ -135,6 +135,11 @@
         <div class="periodical">
           {{ entry.note | strip }}
         </div>
+        {%- if entry.comment -%}
+        <div class="comment">
+          {{ entry.comment | strip }}
+        </div>
+        {%- endif -%}
 
           <!-- Links/Buttons -->
           <div class="links">
