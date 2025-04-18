@@ -132,6 +132,11 @@
         <div class="periodical">
           {{ periodical | strip }}
         </div>
+        {%- if entry.comment -%}
+        <div class="comment">
+          {{ entry.comment | strip }}
+        </div>
+        {%- endif -%}
         <div class="periodical">
           {{ entry.note | strip }}
         </div>
