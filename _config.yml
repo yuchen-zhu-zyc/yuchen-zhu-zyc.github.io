@@ -50,7 +50,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 1200px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -73,7 +73,7 @@ mastodon_username: # your mastodon instance+username in the format instance.tld/
 linkedin_username: yuchen-zhu-0965211b7
 telegram_username: # your Telegram user name
 scholar_userid: alM0KqcAAAAJ # your Google Scholar ID
-semanticscholar_id: # your Semantic Scholar ID
+semanticscholar_id: 2295790135 # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
