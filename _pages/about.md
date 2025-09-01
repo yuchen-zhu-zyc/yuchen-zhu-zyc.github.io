@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi, I am Yuchen Zhu, a 2nd year Machine Learning PhD at [Georgia Tech](https://ml.gatech.edu/).
+Hi, I am Yuchen Zhu, a 3rd year Machine Learning PhD at [Georgia Tech](https://ml.gatech.edu/).
 
 My interests lie in the broad aspects of **GenAI**, wich applications in vision, language, and sciences (e.g. single cell genomics, protein sciences, etc). My research currently focuses on **diffusion models/flow-based methods** (especially **discrete diffusion**), and **multimodal foundation models** (such as VLMs, Multimodal LLMs). 
 
