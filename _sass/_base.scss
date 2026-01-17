@@ -1073,3 +1073,18 @@ nav[data-toggle="toc"] {
 #toc-sidebar {
   z-index: 1;
 }
+
+// Logo styling for inline images
+.logo {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 4px 2px;
+  object-fit: contain;
+}
+
+@media (min-width: 900px) {
+  .logo {
+    height: 1.2em;
+  }
+}
