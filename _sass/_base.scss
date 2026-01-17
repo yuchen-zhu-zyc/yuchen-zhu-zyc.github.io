@@ -1075,16 +1075,19 @@ nav[data-toggle="toc"] {
 }
 
 // Logo styling for inline images
-.logo {
-  height: 1em;
-  width: auto;
+img.logo {
+  height: 1em !important;
+  width: auto !important;
+  max-width: none !important; // Override the general img max-width: 90vw rule
+  max-height: 1em !important;
   vertical-align: middle;
   margin: 0 4px 2px;
-  object-fit: contain;
+  display: inline-block;
 }
 
 @media (min-width: 900px) {
-  .logo {
-    height: 1.2em;
+  img.logo {
+    height: 1.2em !important;
+    max-height: 1.2em !important;
   }
 }
