@@ -1,7 +1,7 @@
 - date: "02/2026"
   content: >
     <a href="https://arxiv.org/abs/2602.04663">Rethinking Diffusion RL</a> is online!
-    We show the importance of likelihood estimation beyond loss design for RL post-training of diffusion models.
+    Importance of likelihood estimation in diffusion model RL is more than you think.
 
 - date: "01/2026"
   content: >
@@ -13,8 +13,7 @@
 - date: "10/2025"
   content: >
     <a href="https://arxiv.org/abs/2510.08233">DMPO</a> is online!
-    Check out a completely new RL paradigm that uniquely leverages
-    characteristics of diffusion LLMs for effective post-training!
+    Check out a completely new RL paradigm of diffusion LLMs for effective post-training!
     Code is available <a href="https://github.com/yuchen-zhu-zyc/DMPO">here</a>.
 
 - date: "10/2025"
