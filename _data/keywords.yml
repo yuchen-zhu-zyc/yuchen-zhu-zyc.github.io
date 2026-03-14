@@ -1,0 +1,33 @@
+# Keyword tag colors for publications.
+# Referenced by keywords_display in papers.bib.
+# Softer, lighter palette for aesthetic consistency.
+diffusion:
+  color: "#64B5F6"
+  label: "Diffusion"
+dllm:
+  color: "#B39DDB"
+  label: "dLLM"
+rl:
+  color: "#81C784"
+  label: "RL"
+sampling:
+  color: "#90CAF9"
+  label: "Sampling"
+bio:
+  color: "#EF9A9A"
+  label: "Bio"
+multimodal:
+  color: "#FFCC80"
+  label: "Multimodal"
+geometry:
+  color: "#80CBC4"
+  label: "Geometry"
+quantum:
+  color: "#CE93D8"
+  label: "Quantum"
+mf:
+  color: "#BCAAA4"
+  label: "Mean-Field"
+vlm:
+  color: "#F48FB1"
+  label: "VLM"

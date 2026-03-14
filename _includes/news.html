@@ -1,110 +1,36 @@
-          <!-- <div class="news">
-            {% if site.news != blank -%}
-            {%- assign news_size = site.news | size -%}
-            <div class="table-responsive" {% if include.limit and site.announcements.scrollable and news_size > 3 %}style="max-height: 60vw"{% endif %}>
-              <table class="table table-sm table-borderless">
-              {%- assign news = site.news | reverse -%}
-              {% if include.limit and site.announcements.limit %}
-              {% assign news_limit = site.announcements.limit %}
-              {% else %}
-              {% assign news_limit = news_size %}
-              {% endif %}
-              {% for item in news limit: news_limit %}
-                <tr>
-                  <th scope="row" style="width: 20%">{{ item.date | date: "%b %-d, %Y" }}</th>
-                  <td>
-                    {% if item.inline -%}
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%}
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %}
-                  </td>
-                </tr>
-              {%- endfor %}
-              </table>
-            </div>
-          {%- else -%}
-            <p>No news so far...</p>
-          {%- endif %}
-          </div> -->
-          <div class="news">
-            <h5 style="text-align: center; font-size: 150%; font-weight: 600; padding: 10px 0 10px 0;">Updates</h5>
-            <div class="table-responsive">
-              <table class="table table-sm table-borderless">
-                <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [01/2026]
-                  I start as a Research Scientist Intern at <img src="{{ 'assets/img/adobe.png' | relative_url }}" alt="Adobe logo" class="logo"> <a href="https://research.adobe.com/" target="_blank">Adobe Research</a>, working on post-training of diffusion LLMs.
-                </td></tr>
-                <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [10/2025]
-                  <a href="https://arxiv.org/abs/2510.08233" target="_blank">DMPO</a> is online! Check out a completely new RL paradigm that uniquely leverages characteristics of diffusion LLMs for effective post-training! Code is available at <a href="https://github.com/yuchen-zhu-zyc/DMPO" target="_blank">here</a>.
-                </td></tr>
-                <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [10/2025]
-                  <a href="https://arxiv.org/abs/2509.25171" target="_blank">TR2-D2</a> is online! Discover the SOTA method for finetuning MDM for bio seqs design with tree search + off-policy RL!
-                </td></tr>
+{% comment %}
+  Data-driven news section.
+  Edit _data/news.yml to add/remove news items.
+  Each item needs: date (MM/YYYY) and content (HTML allowed).
+  Colors cycle by year+month with a two-schedule pattern:
+    even years use palette A (indices 0-2), odd years use palette B (indices 3-5).
+{% endcomment %}
 
-                <!-- <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [10/2025]
-                  <a href="https://www.arxiv.org/abs/2510.03824" target="_blank">PDNS</a> is online! See our new upgrade of <a href="https://arxiv.org/abs/2508.10684" target="_blank">MDNS</a> with additional proximal gradient steps!
-                </td></tr> -->
+<div class="news">
+  <h2 class="section-heading">Updates</h2>
+  {% if site.data.news.size > 0 %}
 
-                <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [09/2025]
-                  <a href="https://arxiv.org/abs/2508.10684" target="_blank">MDNS</a> and <a href="https://arxiv.org/abs/2502.00234" target="_blank">Discrete Fast Solvers</a> got accepted to <b>NeurIPS 2025</b>, see you in San Diego!
-                </td></tr>
-<!-- 
-                <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [08/2025]
-                  <a href="https://arxiv.org/abs/2508.10684" target="_blank">MDNS</a> is online! Come find out our new work on ways to doing RL with masked discrete diffusion!
-                </td></tr> -->
-
-                <!-- <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [06/2025]
-                  <a href="https://arxiv.org/abs/2506.07936" target="_blank">Mimicking or Reasoning</a> is public! Check out our new work on evaluating MM-ICL for VLM reasoners!
-                </td></tr> -->
-
-                <!-- <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [06/2025]
-                  <a href="https://arxiv.org/abs/2506.07903" target="_blank">Diffuse Everything</a> is online! Check out our new work on multimodal diffusion models on native state spaces!
-                </td></tr> -->
-                
-                <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [05/2025]
-                  <a href="https://arxiv.org/abs/2410.08850v2" target="_blank">Learning to Stop</a> and <a href="https://arxiv.org/abs/2506.07903" target="_blank">Diffuse Everything</a> got accepted to <b>ICML 2025</b>, see you in Vancouver!
-                </td></tr>
-
-                <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [04/2025]
-                  I wrote a <a href="https://itsdynamical.github.io/article/2025/04/11/TDM.html" target="_blank">new blog </a> on how group structures aid generative modeling of manifold data.
-                </td></tr>
-                <!-- <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [02/2025]
-                  Check out my <a href="https://arxiv.org/abs/2502.00234" target="_blank">new work </a> on fast high-order samplers for discrete diffusion models!
-                </td></tr> -->
-
-                <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [01/2025]
-                  <a href="https://openreview.net/forum?id=DTatjJTDl1 target="_blank">TDM </a> and <a href="https://openreview.net/forum?id=FtjLUHyZAO" target="_blank"> STEM </a> got accepted to <b>ICLR 2025</b>, see you in Singapore!
-                </td></tr>
-
-                <!-- <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [10/2024]
-                  New work <a href="https://arxiv.org/abs/2410.02143" target="_blank">Plug-and-Play Controllable Generation for Discrete Masked Models</a> is online!
-                </td></tr> -->
-                  <!-- <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [05/2024]
-                  New work <a href="https://arxiv.org/abs/2405.16381" target="_blank">Trivialized Momentum Facilitates Diffusion Generative Modeling on Lie Groups</a> is online!
-                </td></tr> -->
-                <!-- <tr><td style="padding-top: 0rem; padding: 0 0 0 0;"> -->
-                  <!-- [04/2024]
-                  New work <a href="https://arxiv.org/abs/2404.06336" target="_blank">Quantum state generation with Structure Preserving Diffusion Model</a> is online!
-                </td></tr>
-                <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-                  [01/2024]
-                  I switched theme of my personal website
-                </td></tr> -->
-
-              </table>
-            </div>
-          </div>
+  <div class="news-scroll">
+    <ul class="news-list">
+      {% for item in site.data.news %}
+        {% assign parts = item.date | split: "/" %}
+        {% assign mo = parts[0] | plus: 0 %}
+        {% assign yr = parts[1] | plus: 0 %}
+        {% assign yr_mod = yr | modulo: 2 %}
+        {% assign mo_idx = mo | modulo: 3 %}
+        {% if yr_mod == 0 %}
+          {% assign color_idx = mo_idx %}
+        {% else %}
+          {% assign color_idx = mo_idx | plus: 3 %}
+        {% endif %}
+        <li>
+          <span class="news-date year-color-{{ color_idx }}">{{ item.date }}</span>
+          {{ item.content }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% else %}
+  <p>No news so far...</p>
+  {% endif %}
+</div>

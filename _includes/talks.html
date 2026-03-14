@@ -1,27 +1,31 @@
+{% comment %}
+  Data-driven talks section.
+  Edit _data/talks.yml to add/remove talks.
+  Each item needs: date (MM/YYYY) and title.
+  Colors cycle by year+month with same two-schedule pattern as news.
+{% endcomment %}
+
 <div class="talks">
-    <h5 style="text-align: center; font-size: 150%; font-weight: 600; padding: 10px 0 10px 0;">Talks</h5>
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
+  <h2 class="section-heading">Talks</h2>
+  {% if site.data.talks.size > 0 %}
 
-        <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-          [03/2026] INFORMS Optimization Society Conference 2026
-        </td></tr>
-        <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-          [09/2025] GT ML Student Conference
-        </td></tr>
-        <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-          [08/2025] MolSS Reading Group
-        </td></tr>
-        <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-          [11/2024] GT ML Student Seminar
-        </td></tr>
-        <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-          [10/2024] SIAM MDS 2024
-        </td></tr>
-        <tr><td style="padding-top: 0rem; padding: 0 0 0 0;">
-          [04/2024] Southeast ACM Student Workshop 2024
-        </td></tr>
-
-      </table>
-    </div>
-  </div>
+  <ul class="talks-list">
+    {% for item in site.data.talks %}
+      {% assign parts = item.date | split: "/" %}
+      {% assign mo = parts[0] | plus: 0 %}
+      {% assign yr = parts[1] | plus: 0 %}
+      {% assign yr_mod = yr | modulo: 2 %}
+      {% assign mo_idx = mo | modulo: 3 %}
+      {% if yr_mod == 0 %}
+        {% assign color_idx = mo_idx %}
+      {% else %}
+        {% assign color_idx = mo_idx | plus: 3 %}
+      {% endif %}
+      <li>
+        <span class="news-date year-color-{{ color_idx }}">{{ item.date }}</span>
+        {{ item.title }}
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>

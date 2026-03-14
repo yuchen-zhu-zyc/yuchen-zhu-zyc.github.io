@@ -9,9 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>140 Skiles</p>
-    <p>686 Cherry St NW</p>
-    <p>Atlanta, GA 30332</p>
+    <p class="photo-credit">Photo credit to <a href="https://sichenzhu.github.io/">Sichen</a>. Grand Canyon.</p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts

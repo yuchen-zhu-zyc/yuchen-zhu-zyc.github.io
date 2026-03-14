@@ -1,0 +1,28 @@
+{% comment %}
+  Data-driven reviewer/service section.
+  Edit _data/service.yml to update.
+{% endcomment %}
+
+{% if site.data.service %}
+<div class="service">
+  <h2 class="section-heading">Reviewer Service</h2>
+  <div class="service-section">
+    {% if site.data.service.conferences.size > 0 %}
+    <div style="margin-bottom: 6px;">
+      <span class="service-label">Conferences:</span>
+      {% for conf in site.data.service.conferences %}
+        <span class="service-badge">{{ conf }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if site.data.service.journals.size > 0 %}
+    <div>
+      <span class="service-label">Journals:</span>
+      {% for journal in site.data.service.journals %}
+        <span class="service-badge">{{ journal }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}

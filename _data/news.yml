@@ -1,0 +1,83 @@
+- date: "01/2026"
+  content: >
+    I start as a Research Scientist Intern at
+    <img src="assets/img/adobe.png" alt="Adobe logo" class="logo">
+    <a href="https://research.adobe.com/">Adobe Research</a>,
+    working on post-training of diffusion LLMs.
+
+- date: "10/2025"
+  content: >
+    <a href="https://arxiv.org/abs/2510.08233">DMPO</a> is online!
+    Check out a completely new RL paradigm that uniquely leverages
+    characteristics of diffusion LLMs for effective post-training!
+    Code is available <a href="https://github.com/yuchen-zhu-zyc/DMPO">here</a>.
+
+- date: "10/2025"
+  content: >
+    <a href="https://arxiv.org/abs/2509.25171">TR2-D2</a> is online!
+    Discover the SOTA method for finetuning MDM for bio seqs design
+    with tree search + off-policy RL!
+
+- date: "10/2025"
+  content: >
+    <a href="https://www.arxiv.org/abs/2510.03824">PDNS</a> is online!
+    See our new upgrade of <a href="https://arxiv.org/abs/2508.10684">MDNS</a>
+    with additional proximal gradient steps!
+
+- date: "09/2025"
+  content: >
+    <a href="https://arxiv.org/abs/2508.10684">MDNS</a> and
+    <a href="https://arxiv.org/abs/2502.00234">Discrete Fast Solvers</a>
+    got accepted to <b>NeurIPS 2025</b>, see you in San Diego!
+
+- date: "08/2025"
+  content: >
+    <a href="https://arxiv.org/abs/2508.10684">MDNS</a> is online!
+    Come find out our new work on ways to doing RL with masked discrete diffusion!
+
+- date: "06/2025"
+  content: >
+    <a href="https://arxiv.org/abs/2506.07936">Mimicking or Reasoning</a> is public!
+    Check out our new work on evaluating MM-ICL for VLM reasoners!
+
+- date: "06/2025"
+  content: >
+    <a href="https://arxiv.org/abs/2506.07903">Diffuse Everything</a> is online!
+    Check out our new work on multimodal diffusion models on native state spaces!
+
+- date: "05/2025"
+  content: >
+    <a href="https://arxiv.org/abs/2410.08850v2">Learning to Stop</a> and
+    <a href="https://arxiv.org/abs/2506.07903">Diffuse Everything</a>
+    got accepted to <b>ICML 2025</b>, see you in Vancouver!
+
+- date: "04/2025"
+  content: >
+    I wrote a <a href="https://itsdynamical.github.io/article/2025/04/11/TDM.html">new blog</a>
+    on how group structures aid generative modeling of manifold data.
+
+- date: "02/2025"
+  content: >
+    Check out my <a href="https://arxiv.org/abs/2502.00234">new work</a>
+    on fast high-order samplers for discrete diffusion models!
+
+- date: "01/2025"
+  content: >
+    <a href="https://openreview.net/forum?id=DTatjJTDl1">TDM</a> and
+    <a href="https://openreview.net/forum?id=FtjLUHyZAO">STEM</a>
+    got accepted to <b>ICLR 2025</b>, see you in Singapore!
+
+- date: "10/2024"
+  content: >
+    New work <a href="https://arxiv.org/abs/2410.02143">Plug-and-Play Controllable
+    Generation for Discrete Masked Models</a> is online!
+
+- date: "05/2024"
+  content: >
+    New work <a href="https://arxiv.org/abs/2405.16381">Trivialized Momentum
+    Facilitates Diffusion Generative Modeling on Lie Groups</a> is online!
+
+- date: "04/2024"
+  content: >
+    New work <a href="https://arxiv.org/abs/2404.06336">Quantum state generation
+    with Structure Preserving Diffusion Model</a> is online!
