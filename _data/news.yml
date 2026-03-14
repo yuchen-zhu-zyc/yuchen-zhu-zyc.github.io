@@ -1,3 +1,8 @@
+- date: "02/2026"
+  content: >
+    <a href="https://arxiv.org/abs/2602.04663">Rethinking Diffusion RL</a> is online!
+    We show the importance of likelihood estimation beyond loss design for RL post-training of diffusion models.
+
 - date: "01/2026"
   content: >
     I start as a Research Scientist Intern at
