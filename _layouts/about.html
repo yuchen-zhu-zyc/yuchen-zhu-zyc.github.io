@@ -34,6 +34,11 @@ layout: default
               {{ page.profile.more_info }}
             </div>
             {%- endif %}
+            {%- if page.social %}
+            <div class="profile-social">
+              {% include social.html %}
+            </div>
+            {%- endif %}
           </div>
           {%- endif %}
 
@@ -75,19 +80,7 @@ layout: default
           </div>
           {% endcomment %}
 
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
-          {%- endif %}
+          <!-- Social (moved to profile sidebar) -->
         </article>
 
 </div>
