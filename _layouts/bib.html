@@ -99,15 +99,14 @@
 
         </div>
 
-        <!-- Venue badge (inline, below author) -->
-        <div class="pub-venue">
+        <!-- Venue (italic text) -->
+        <div class="pub-venue-text">
           {%- if entry.abbr and entry.abbr != "arXiv" -%}
-            <span class="pub-venue-badge">{{ entry.abbr }} {{ entry.year }}</span>
+            <em>{{ entry.abbr }} {{ entry.year }}</em>
           {%- else -%}
-            <span class="pub-venue-badge preprint">Preprint</span>
+            <em>Preprint, {{ entry.year }}</em>
           {%- endif -%}
         </div>
-        <!-- Periodical -->
         {%- if entry.comment -%}
         <div class="comment">
           {{ entry.comment | strip }}
@@ -118,74 +117,61 @@
           {{ entry.note | strip }}
         </div>
         {%- endif -%}
-          <!-- Links/Buttons -->
+          <!-- Links -->
           <div class="links">
           {%- if entry.abstract %}
-            <a class="abstract pub-link" role="button">Abs</a>
+            <a class="abstract pub-link" role="button">[Abs]</a>
           {%- endif %}
           {%- if entry.arxiv %}
-            <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="pub-link" role="button">arXiv</a>
+            <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="pub-link">[arXiv]</a>
           {%- endif %}
           {%- if entry.bibtex_show %}
-            <a class="bibtex pub-link" role="button">Bib</a>
+            <a class="bibtex pub-link" role="button">[Bib]</a>
           {%- endif %}
           {%- if entry.html %}
-            <a href="{{ entry.html }}" class="pub-link">Paper</a>
+            <a href="{{ entry.html }}" class="pub-link">[Paper]</a>
           {%- endif %}
           {%- if entry.github %}
-            <a href="{{ entry.github }}" class="pub-link">Code</a>
+            <a href="{{ entry.github }}" class="pub-link">[Code]</a>
           {%- endif %}
           {%- if entry.pdf %}
             {% if entry.pdf contains '://' -%}
-            <a href="{{ entry.pdf }}" class="pub-link">PDF</a>
+            <a href="{{ entry.pdf }}" class="pub-link">[PDF]</a>
             {%- else -%}
-            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="pub-link">PDF</a>
+            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="pub-link">[PDF]</a>
             {%- endif %}
           {%- endif %}
           {%- if entry.supp %}
             {% if entry.supp contains '://' -%}
-            <a href="{{ entry.supp }}" class="pub-link">Supp</a>
+            <a href="{{ entry.supp }}" class="pub-link">[Supp]</a>
             {%- else -%}
-            <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="pub-link">Supp</a>
+            <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="pub-link">[Supp]</a>
             {%- endif %}
           {%- endif %}
           {%- if entry.blog %}
-            <a href="{{ entry.blog }}" class="pub-link">Blog</a>
+            <a href="{{ entry.blog }}" class="pub-link">[Blog]</a>
           {%- endif %}
           {%- if entry.code %}
-            <a href="{{ entry.code }}" class="pub-link">Code</a>
+            <a href="{{ entry.code }}" class="pub-link">[Code]</a>
           {%- endif %}
           {%- if entry.poster %}
             {% if entry.poster contains '://' -%}
-            <a href="{{ entry.poster }}" class="pub-link">Poster</a>
+            <a href="{{ entry.poster }}" class="pub-link">[Poster]</a>
             {%- else -%}
-            <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="pub-link">Poster</a>
+            <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="pub-link">[Poster]</a>
             {%- endif %}
           {%- endif %}
           {%- if entry.slides %}
             {% if entry.slides contains '://' -%}
-            <a href="{{ entry.slides }}" class="pub-link">Slides</a>
+            <a href="{{ entry.slides }}" class="pub-link">[Slides]</a>
             {%- else -%}
-            <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="pub-link">Slides</a>
+            <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="pub-link">[Slides]</a>
             {%- endif %}
           {%- endif %}
           {%- if entry.website %}
-            <a href="{{ entry.website }}" class="pub-link">Website</a>
+            <a href="{{ entry.website }}" class="pub-link">[Website]</a>
           {%- endif %}
           </div>
-          {%- if entry.keywords_display -%}
-          <div class="pub-keywords">
-            {%- assign kw_list = entry.keywords_display | split: "," -%}
-            {%- for kw in kw_list -%}
-              {%- assign kw_stripped = kw | strip -%}
-              {%- if site.data.keywords[kw_stripped] -%}
-                <span class="pub-keyword" style="background-color: {{ site.data.keywords[kw_stripped].color }};">{{ site.data.keywords[kw_stripped].label }}</span>
-              {%- else -%}
-                <span class="pub-keyword">{{ kw_stripped }}</span>
-              {%- endif -%}
-            {%- endfor -%}
-          </div>
-          {%- endif -%}
           {% if site.enable_publication_badges %}
           {% assign entry_has_altmetric_badge = entry.altmetric or entry.doi or  entry.eprint or entry.pmid or entry.isbn %}
           {% assign entry_has_dimensions_badge = entry.dimensions or entry.doi or entry.pmid %}

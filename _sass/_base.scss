@@ -4,6 +4,11 @@
 
 // Typography
 
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+}
+
 p,
 h1,
 h2,
@@ -717,10 +722,7 @@ footer.sticky-bottom {
 
         >em {
           font-style: normal;
-          color: var(--global-theme-color);
-          font-weight: bolder;
-          text-decoration: underline;
-          text-underline-offset: 2px;
+          font-weight: 700;
         }
 
         >span.more-authors {
@@ -736,25 +738,16 @@ footer.sticky-bottom {
       }
 
       .links {
-        margin-top: 6px;
+        margin-top: 4px;
 
         a.pub-link {
-          display: inline-block;
           color: var(--global-theme-color);
-          font-size: 0.7rem;
-          font-weight: 500;
-          padding: 1px 8px;
-          margin: 1px 1px;
-          border: 1px solid var(--global-theme-color);
-          border-radius: 12px;
+          font-size: 0.82rem;
           text-decoration: none;
-          cursor: pointer;
-          transition: background-color 0.15s ease, color 0.15s ease;
+          margin-right: 2px;
 
           &:hover {
-            background-color: var(--global-theme-color);
-            color: #fff;
-            text-decoration: none;
+            text-decoration: underline;
           }
         }
       }
@@ -1109,13 +1102,12 @@ img.logo {
 // Custom styles: news, talks, service, publication improvements
 // ============================================================
 
-// Section headings (consistent across all about page sections)
+// Section headings
 .section-heading {
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--global-theme-color);
-  padding: 10px 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--global-text-color);
+  padding: 8px 0;
   margin-bottom: 0.5rem;
 }
 
@@ -1126,15 +1118,13 @@ img.logo {
   margin: 1.2rem 0;
 }
 
-// Year-based badge colors (softer, lighter palette)
-// Schedule A (even years): lavender, soft blue, sage
-// Schedule B (odd years): rose, warm amber, soft teal
-.year-color-0 { background-color: #9575CD; } // lavender
-.year-color-1 { background-color: #64B5F6; } // soft blue
-.year-color-2 { background-color: #81C784; } // sage green
-.year-color-3 { background-color: #E57373; } // soft rose
-.year-color-4 { background-color: #FFB74D; } // warm amber
-.year-color-5 { background-color: #4DB6AC; } // soft teal
+// Year-based date text colors (muted palette)
+.year-color-0 { color: #7E57C2; } // lavender
+.year-color-1 { color: #42A5F5; } // soft blue
+.year-color-2 { color: #66BB6A; } // sage green
+.year-color-3 { color: #EF5350; } // soft rose
+.year-color-4 { color: #FFA726; } // warm amber
+.year-color-5 { color: #26A69A; } // soft teal
 
 // News & Talks list
 .news-list, .talks-list {
@@ -1186,16 +1176,12 @@ img.logo {
   scrollbar-color: var(--global-text-color-light) var(--global-divider-color);
 }
 
-// Date badge
+// Date label
 .news-date {
   display: inline-block;
-  color: #fff;
   font-size: 0.78rem;
   font-weight: 600;
-  padding: 2px 10px;
-  border-radius: 4px;
   min-width: 68px;
-  text-align: center;
   margin-right: 8px;
   vertical-align: middle;
 }
@@ -1222,19 +1208,11 @@ img.logo {
   }
 }
 
-// Publication keyword tags
-.pub-keywords {
-  margin-top: 6px;
-
-  .pub-keyword {
-    display: inline-block;
-    color: #fff;
-    font-size: 0.62rem;
-    font-weight: 500;
-    padding: 1px 8px;
-    border-radius: 10px;
-    margin: 1px 1px;
-  }
+// Publication venue text (italic)
+.pub-venue-text {
+  font-size: 0.88rem;
+  color: var(--global-text-color-light);
+  margin-top: 2px;
 }
 
 // Publication thumbnail improvements
@@ -1302,24 +1280,6 @@ html[data-theme='dark'] {
   align-items: flex-start;
 }
 
-// Inline venue badge (between title and author)
-.pub-venue {
-  margin: 4px 0 3px 0;
-
-  .pub-venue-badge {
-    display: inline-block;
-    background-color: #B39DDB;
-    color: #fff;
-    font-size: 0.68rem;
-    font-weight: 600;
-    padding: 1px 9px;
-    border-radius: 10px;
-
-    &.preprint {
-      background-color: #BDBDBD;
-    }
-  }
-}
 
 // Section navigation links (xavihart-style pill nav)
 .section-nav {
@@ -1340,7 +1300,7 @@ html[data-theme='dark'] {
     transition: background-color 0.15s ease, border-color 0.15s ease;
 
     &:hover {
-      background-color: rgba(156, 39, 176, 0.08);
+      background-color: rgba(13, 87, 151, 0.08);
       border-color: var(--global-theme-color);
       color: var(--global-theme-color);
       text-decoration: none;
