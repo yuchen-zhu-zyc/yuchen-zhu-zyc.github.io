@@ -23,7 +23,7 @@ I work on **generative AI**. My current research centers on building the next ge
 
 I am currently a Research Scientist Intern at <img src="{{ 'assets/img/adobe.png' | relative_url }}" alt="Adobe logo" class="logo"> [Adobe Research](https://research.adobe.com/), working on building capable dLLM. 
 
-I graduated wutg BS in Mathematics (Honors) from <img src="{{ 'assets/img/nyu_shanghai.svg' | relative_url }}" alt="NYU Shanghai logo" class="logo"> [NYU Shanghai](https://shanghai.nyu.edu/) and MA in Statistics from <img src="{{ 'assets/img/yale.png' | relative_url }}" alt="Yale logo" class="logo logo-wide"> [Yale University](https://statistics.yale.edu/). My research started in applied mathematics, optimal control and RL theory, and has since evolved toward generative AI. 
+I graduated with BS in Mathematics (Honors) from <img src="{{ 'assets/img/nyu_shanghai.svg' | relative_url }}" alt="NYU Shanghai logo" class="logo"> [NYU Shanghai](https://shanghai.nyu.edu/) and MA in Statistics from <img src="{{ 'assets/img/yale.png' | relative_url }}" alt="Yale logo" class="logo logo-wide"> [Yale University](https://statistics.yale.edu/). My research started in applied mathematics, optimal control and RL theory, and has since evolved toward generative AI. 
 
 You can find more details in my CV [here](/assets/pdf/YuchenZhu_CV.pdf).
 
