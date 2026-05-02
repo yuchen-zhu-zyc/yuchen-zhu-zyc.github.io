@@ -102,7 +102,7 @@
         <!-- Venue (italic text) -->
         <div class="pub-venue-text">
           {%- if entry.abbr and entry.abbr != "arXiv" -%}
-            <em>{{ entry.abbr }} {{ entry.year }}</em>
+            <em>{{ entry.abbr }} {{ entry.year }}{%- if entry.award %} {{ entry.award }}{%- endif %}</em>
           {%- else -%}
             <em>Preprint, {{ entry.year }}</em>
           {%- endif -%}

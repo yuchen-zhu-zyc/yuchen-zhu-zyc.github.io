@@ -1,3 +1,19 @@
+- date: "05/2026"
+  content: >
+    <a href="https://arxiv.org/abs/2510.08233">DMPO</a> got
+    <b>Spotlight (&lt; 2.2%)</b> at <b>ICML 2026</b>!
+    Code is available <a href="https://github.com/yuchen-zhu-zyc/DMPO">here</a>.
+    See you in Seoul!
+
+- date: "05/2026"
+  content: >
+    5 papers @ <b>ICML 2026</b>:
+    <a href="https://arxiv.org/abs/2602.14147">LaViDa-R1</a>,
+    <a href="https://arxiv.org/abs/2602.08243">Discrete ASBS</a>,
+    <a href="https://arxiv.org/abs/2510.08233">DMPO</a>,
+    <a href="https://arxiv.org/abs/2602.01842">PRISM</a>, and
+    <a href="https://arxiv.org/abs/2602.04663">Rethinking Diffusion RL</a>.
+
 - date: "02/2026"
   content: >
     <a href="https://arxiv.org/abs/2602.04663">Rethinking Diffusion RL</a> is online!
