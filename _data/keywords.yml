@@ -7,6 +7,9 @@ diffusion:
 dllm:
   color: "#B39DDB"
   label: "dLLM"
+llm:
+  color: "#9FA8DA"
+  label: "LLM"
 rl:
   color: "#81C784"
   label: "RL"
