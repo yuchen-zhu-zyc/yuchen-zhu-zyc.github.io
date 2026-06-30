@@ -1,5 +1,25 @@
 - date: "06/2026"
   content: >
+    I start as a Research Scientist Intern at
+    <img src="assets/img/nvidia.webp" alt="NVIDIA logo" class="logo">
+    <a href="https://www.nvidia.com/">NVIDIA</a>,
+    working on LLM coding agents.
+
+- date: "06/2026"
+  content: >
+    <a href="https://arxiv.org/abs/2606.13565">A2D2</a> is online!
+    The follow-up to <a href="https://arxiv.org/abs/2509.25171">TR2-D2</a> — a unified framework for
+    reward-guided fine-tuning of <b>any-length</b> masked discrete diffusion via joint
+    insertion-and-unmasking policies with adaptive decoding!
+
+- date: "06/2026"
+  content: >
+    Check out <a href="https://agents-last-exam.org">ALE</a>, by far the most comprehensive
+    benchmark of frontier models' capability in real professional work.
+    Happy to be part of the effort and contributing my expertise.
+
+- date: "06/2026"
+  content: >
     <a href="https://tokflare.github.io/">FLARE</a> is online!
     Check out our new study on how to build SOTA dLLMs from LLMs with hybrid-attention!
 

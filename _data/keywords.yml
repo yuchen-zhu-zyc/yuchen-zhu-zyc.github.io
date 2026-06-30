@@ -34,3 +34,6 @@ mf:
 vlm:
   color: "#F48FB1"
   label: "VLM"
+agent:
+  color: "#A5D6A7"
+  label: "Agent"
