@@ -3,8 +3,9 @@
 <!-- _layouts/bib.html -->
       <div class="row pub-row">
         {%- if site.enable_publication_thumbnails -%}
-        <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
+        <div class="col-sm-3 pub-thumbnail-column {% if entry.preview %}has-preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
+        <div class="pub-thumbnail-frame">
           {% if entry.preview contains '://' -%}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
           {%- else -%}
@@ -15,12 +16,13 @@
             zoomable=false
             alt=entry.preview -%}
           {%- endif -%}
+        </div>
         {%- endif -%}
         </div>
         {%- endif -%}
 
         <!-- Entry bib key -->
-        <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-10{% else %}col-sm-12{% endif %}">
+        <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-9{% else %}col-sm-12{% endif %}">
         <!-- Title -->
         <div class="title">{{entry.title}}</div>
         <!-- Author -->
@@ -173,6 +175,9 @@
           {%- endif %}
           {%- if entry.models %}
             <a href="{{ entry.models }}" class="pub-link">[Models]</a>
+          {%- endif %}
+          {%- if entry.dataset %}
+            <a href="{{ entry.dataset }}" class="pub-link">[Dataset]</a>
           {%- endif %}
           </div>
           {%- if entry.keywords_display -%}

@@ -1,3 +1,14 @@
+- date: "08/2026"
+  content: >
+    <a href="https://arxiv.org/abs/2608.04424">Thinking with Anchors</a> is online!
+    Check out our new work on grounded and efficient document reasoning with visual anchors!
+
+- date: "08/2026"
+  content: >
+    <a href="https://tokflare.github.io/">FLARE</a> code and checkpoints are released!
+    Check out the <a href="https://github.com/yuchen-zhu-zyc/FLARE">code</a> and
+    <a href="https://huggingface.co/collections/yuchen-zhu-zyc/flare">FLARE-2B/4B/9B checkpoints</a>.
+
 - date: "06/2026"
   content: >
     I start as a Research Scientist Intern at

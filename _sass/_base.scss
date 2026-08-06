@@ -1239,24 +1239,59 @@ img.logo.logo-wide {
   margin-top: 2px;
 }
 
-// Publication thumbnail improvements
-.publications ol.bibliography li .preview {
+// Publication thumbnails use a wide editorial crop instead of a square card.
+.publications ol.bibliography li .pub-thumbnail-frame {
   width: 100%;
-  min-width: 80px;
-  max-width: 200px;
+  max-width: 260px;
+  aspect-ratio: 2 / 1;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 8px;
+  background: #eef1f4;
+
+  figure,
+  picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
 
   img {
+    display: block;
     width: 100%;
-    height: 130px;
+    min-width: 0;
+    max-width: none;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
     transition: transform 0.2s ease;
-    border-radius: 6px;
+    border-radius: 8px;
 
     &:hover {
       transform: scale(1.05);
     }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .publications ol.bibliography li .pub-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .publications ol.bibliography li .pub-thumbnail-column {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .publications ol.bibliography li .pub-row > .col-sm-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .publications ol.bibliography li .pub-thumbnail-frame {
+    max-width: none;
   }
 }
 
