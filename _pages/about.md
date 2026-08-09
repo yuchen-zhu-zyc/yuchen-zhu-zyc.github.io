@@ -27,6 +27,4 @@ During <b>Spring 2026</b>, I was fortunate to work with [Jiuxiang Gu](https://gu
 
 I graduated with BS in Mathematics (Honors) from <img src="{{ 'assets/img/nyu_shanghai.svg' | relative_url }}" alt="NYU Shanghai logo" class="logo"> [NYU Shanghai](https://shanghai.nyu.edu/) and MA in Statistics from <img src="{{ 'assets/img/yale.png' | relative_url }}" alt="Yale logo" class="logo logo-wide"> [Yale University](https://statistics.yale.edu/). My research started in applied mathematics, optimal control and RL theory, and has since evolved toward generative AI — a path that still informs how I think about modeling and inference today.
 
-You can find more details in my CV [here](/assets/pdf/YuchenZhu_CV.pdf).
-
 📧 Feel free to reach out: [yzhu738@gatech.edu](mailto:yzhu738@gatech.edu) / [yuchenzhu0226@gmail.com](mailto:yuchenzhu0226@gmail.com)
