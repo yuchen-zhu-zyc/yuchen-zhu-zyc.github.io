@@ -19,9 +19,9 @@ social: true  # includes social icons at the bottom of the page
 
 Hi, I am Yuchen Zhu, a final-year Machine Learning PhD at <img src="{{ 'assets/img/gt.png' | relative_url }}" alt="Georgia Tech logo" class="logo logo-wide"> [Georgia Tech](https://ml.gatech.edu/), advised by [Molei Tao](https://mtao8.math.gatech.edu/) and [Yongxin Chen](https://yongxin.ae.gatech.edu/).
 
-I work on **generative AI**. My research centers on advancing **agentic LLMs** from data-centric and system perspectives, with current focus on **coding agents**. In parallel, I push the speed–intelligence frontier of LLM through **diffusion language models (dLLMs)**, from both the algorithmic and system perspectives. I am also broadly interested in **diffusion models** for probabilistic inference and applications across images, video, and the sciences.
+I work on **generative AI**. My research centers on advancing **LLMs** from data-centric and system perspectives, with current focus on mid-training and post-training for **coding agents**. In parallel, I push the speed–intelligence frontier of language models through **diffusion language models (dLLMs)**, from both the algorithmic and system perspectives. I am also broadly interested in **diffusion models** for probabilistic inference and applications across images, video, and the sciences.
 
-During <b>Summer 2026</b>, I am a Research Scientist Intern at <img src="{{ 'assets/img/nvidia.webp' | relative_url }}" alt="NVIDIA logo" class="logo"> [NVIDIA](https://www.nvidia.com/), exploring frontier agentic LLMs.
+During <b>Summer 2026</b>, I am a Research Scientist Intern at <img src="{{ 'assets/img/nvidia.webp' | relative_url }}" alt="NVIDIA logo" class="logo"> [NVIDIA ADLR](https://www.nvidia.com/), working with [Zihan Liu](https://zliucr.github.io/) and [Wei Ping](https://wpingnet.github.io/) on agentic post-training of next generation of Nemotron models.
 
 During <b>Spring 2026</b>, I was fortunate to work with [Jiuxiang Gu](https://gujiuxiang.com/) and [Jing Shi](https://jshi31.github.io/jingshi/) as a Research Scientist Intern at <img src="{{ 'assets/img/adobe.png' | relative_url }}" alt="Adobe logo" class="logo"> [Adobe Research](https://research.adobe.com/), building efficient & capable dLLMs at scale. 
 

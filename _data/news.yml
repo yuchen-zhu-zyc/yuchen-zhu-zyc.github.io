@@ -1,3 +1,18 @@
+- date: "09/2026"
+  content: >
+    3 papers @ <b>NeurIPS 2026</b>:
+    <a href="https://tokflare.github.io/">FLARE</a>,
+    <a href="https://agents-last-exam.org/">Agents' Last Exam</a>, and
+    <a href="https://arxiv.org/abs/2605.11480">Efficient Adjoint Matching</a>
+    (<b>Spotlight</b>). See you in Sydney!
+
+- date: "09/2026"
+  content: >
+    Excited to co-organize
+    <a href="https://7amin.github.io/diffulm-neurips2026/index.html">DiffuLM @ NeurIPS 2026</a>,
+    the first NeurIPS workshop dedicated to diffusion language models!
+    Join us in Sydney on December 12 to discuss foundations, efficiency, and reasoning.
+
 - date: "08/2026"
   content: >
     <a href="https://arxiv.org/abs/2608.04424">Thinking with Anchors</a> is online!
